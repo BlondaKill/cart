@@ -20,7 +20,7 @@ let swiper = new Swiper(".mySwiper", {
         520: {
             slidesPerView: 2
         },
-        150: {
+        950: {
             slidePerView: 3
         }
     }
