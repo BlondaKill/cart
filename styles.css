@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Anton&family=Archivo+Black&family=Bangers&family=Covered+By+Your+Grace&family=DynaPuff:wght@500;600;700&family=Gruppo&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Lilita+One&family=Permanent+Marker&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;1,300&family=Righteous&family=Roboto:wght@300&family=Rowdies:wght@300;400;700&family=Rubik+80s+Fade&family=Rubik+Mono+One&family=Rubik+Vinyl&family=Rubik+Wet+Paint&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&family=Sigmar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family:  'Permanent Marker', 'Rubik Mono One';
+    background-image: url(img/b10.JPG);
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.header {
+    display: flex;
+    position: relative;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo {
+    color: blueviolet;
+    font-size: 25px;
+    font-weight: 800;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(62, 10, 110);
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover {
+    color: gold;
+}
+#menu  {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+/* carrito */
+.submenu {
+    position: relative;
+}
+.submenu #carrito {
+    display: none;
+}
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: rgb(78, 181, 106);
+    padding: 20px;
+    min-width: 400px;
+    min-width: 400px;
+}
+table {
+    width: 100%;
+}
+th {
+    color: blueviolet;
+}
+td {
+    color: purple;
+}
+.borrar {
+    background-color: purple;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: aquamarine;
+    font-weight: 800;
+}
+.header-content {
+    position: relative;
+    text-align: center;
+    margin-top: 300px;
+}
+.header-content h1 {
+    font-size: 70px;
+    color: rgba(179, 250, 26, 0.851);
+    font-weight: 800;
+    margin-bottom: 30px;
+    padding-top: 80px;
+}
+.header-content p {
+    font-size: 18px;
+    padding: 0 200px;
+    color: rgb(226, 192, 43);
+    margin-bottom: 80px;
+}
+.botons {
+    display: flex;
+    justify-content: center;
+}
+.btn-1 {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin: 0 10px;
+    padding: 10px 0;
+    border-radius: 25px;
+    color: green;
+    text-transform: uppercase;
+    background-color: orange;
+}
+.btn-1:hover {
+    background-color: pink;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+}
+.recetas {
+    display: flex;
+    padding: 150px 0;
+}
+.recetas-1 {
+    width: 50%;
+    padding: 120px 0;
+}
+.recetas-1 h3 {
+    font-size: 18px;
+    color: black;
+    
+}
+.recetas-1 p {
+    color: orangered;
+}
+/*linea naranja*/
+.recetas-1 hr {
+    margin: 30px 0;
+    border: 6px solid orange;
+}
+.recetas-2 {
+    width: 50%;
+    text-align: center;
+}
+.recetas-2 h2 {
+    font-size: 55px;
+    line-height: 55px;
+    padding: 150px 0;
+    
+}
+.platillos {
+    padding: 50px 0;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    padding-bottom: 80px;
+}
+.swiper-button-prev::after {
+    font-size: 25px;
+}
+.swiper-button-next::after {
+    font-size: 25px;
+}
+.swiper-button-prev {
+    color: orangered;
+}
+.swiper-button-next {
+    color: orangered;
+}
+.swiper-pagination-bullet {
+    background-color: black;
+    opacity: 1;
+    top: 50px;
+}
+.swiper-pagination-bullet-active {
+    background-color: black;
+}
+.platillo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+}
+.platillo h3 {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+}
+.precio {
+    font-size: 18px;
+    color: blue !important;
+}
+.platillo img {
+    width: 300px;
+}
+.platillo p {
+    font-size: 16px;
+    color: blue;
+    margin-top: 15px;
+}
+.btn-2 {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: red;
+    font-size: 14px;
+    margin-top: 25px;
+    border-radius: 25px;
+}
+.btn-2:hover {
+    background-color: palevioletred;
+}
+.c1, .c2 {
+    color: black !important;
+}
+.btn-3 {
+    display: inline-block;
+    background-color: red;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    margin-top: 25px;
+}
+.btn-3:hover {
+    background-color: yellowgreen;  
+}
+.footer {
+    padding-bottom: 50px;
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+.link {
+    width: 25%;
+}
+.link h3 {
+    font-size: 20px;
+    color: grey;
+    margin-bottom: 20px ;
+}
+.link p {
+    color: blueviolet;
+    font-size: 14px;
+    margin: 0 50px 15px 0;
+}
+.link ul li a {
+    display: inline-block;
+    font-size: 16px;
+    color: brown;
+    margin-bottom: 10px;
+}
+.socials-2 img {
+    width: 20px;
+    height: 20px;
+}
+.link form {
+    display: flex;
+    flex-direction: column;
+    padding-right: 80px;
+   
+}
+.inp {
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    outline: none;
+}
+.btn-4 {
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: rgb(57, 57, 223);
+    border: 0;
+    color: orange;
+}
+
+/* media queries */
+
+@media (max-widht: 991px) {
+
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(200, 232, 112);
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 30px;
+        margin-top: 130px;
+    }
+
+    .header-content h1 {
+        font-size: 40px;
+    }
+
+    .botons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-1 {
+        margin: 0 0 20px 0;
+    }
+
+    .socials-1 {
+        display: none;
+    }
+    .arrow {
+        display: none;
+    }
+
+    .recetas {
+        flex-direction: column;
+        padding: 0px 30px;
+        text-align: center;
+    }
+    .recetas-1 {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .recetas-2 {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .link {
+        width: 70%;
+    }
+
+    .link p {
+        margin: 0 0 25px 0;
+    }
+
+    .socials-2 {
+        margin-bottom: 15px;
+    }
+    
+}
+
+
+
+

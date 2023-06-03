@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">LOGO</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="img/men.png" class="menu-icono" alt="menu"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Wakeboards</a></li>
+                    <li><a href="#">Boots</a></li>
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+                                                <!--------- carrito begins -------->
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="img/cart.png" id= "img-carrito" alt="">
+                        <div id="carrito">
+                            <table  id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container"> <!--contenido del header-->
+        
+            <h1> Wakerboard Shop </h1>
+            <p>
+            Lorem ipsum dolor sit amet consectetur ipsum ipsum consectetur
+            </p>
+
+        <div class="botons">
+            <a href="#" class="btn-1">Info</a>
+            <a href="#" class="btn-1">Menu</a>
+        </div>
+
+        <div class="socials-1">
+            <!--<img src="img/face1.png" alt="">
+            <img src="img/instagram.png" alt="">
+            <img src="img/twitter.png" alt="">-->
+        </div>
+        
+        </div>
+
+    </header>
+
+<!--------------otra section: recetas-------------------->   
+
+    <section class="recetas container"> 
+
+        <div class="recetas-1">
+            <h3>Our Winner's Riders</h3>
+            <hr>
+            <p>Competitions</p>
+        </div>
+        <div class="recetas-2">
+            <h2>Catch <br>  your <br> Dreams</h2>
+        </div>
+
+    </section>
+
+
+    <section class="platillos container" id="lista"> 
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Eye board</h3>
+                        <p class="precio">$350</p>
+                        <img src="img/w7.JPG" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet 
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>2 board</h3>
+                        <p class="precio">$350</p>
+                        <img src="img/w2.JPG" alt="">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Add to cart</a>
+                    </div>                   
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>3 board</h3>
+                        <p class="precio">$350</p>
+                        <img src="img/w14.JPG" alt="">
+                        <p>
+                            Assumenda odio, consequuntur, officia provident.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Add to cart</a>
+                    </div>                 
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>4 board</h3>
+                        <p class="precio">$350</p>
+                        <img src="img/w13.jpg" alt="">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="4">Add to cart</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            
+        </div>
+
+    </section>
+
+    <section class="recetas container"> 
+        <div class="recetas-2">
+            <h2>Catch <br> your <br> Dreams</h2>
+        </div>
+       
+        <div class="recetas-1">
+            <h3>Our Winner's Riders</h3>
+            <hr>
+            <p>Competitions</p>
+        </div>
+    </section>
+
+<!-- lista 2 -->
+
+    <section class="platillos container" id="lista-2"> 
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1">Fly board</h3>
+                        <p class="precio">$350</p>
+                        <img src="img/w13.JPG" alt="">
+                        <p class="c2">
+                            mejor border
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="5">Add to cart</a>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1">7 board</h3>
+                        <p class="precio">$350</p>
+                        <img src="img/w10.JPG" alt="">
+                        <p class="c2">
+                            mejor border
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="6">Add to cart</a>
+
+                    </div>                   
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1">8 board</h3>
+                        <p class="precio">$350</p>
+                        <img src="img/w8.jpg" alt="">
+                        <p class="c2">
+                            mejor border
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="7">Add to cart</a>
+
+                    </div>                 
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1">9 board</h3>
+                        <p class="precio">$350</p>
+                        <img src="img/w9.JPG" alt="">
+                        <p class="c2">
+                            mejor border
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="8">Add to cart</a>
+
+                    </div>
+                </div>
+            
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            
+        </div>
+
+    </section>
+
+    <section class="recetas container"> 
+
+        <div class="recetas-1">           
+            <hr>
+            <p>Contact</p>
+        </div>
+
+    </section>
+
+    <footer class="footer-container">
+
+        <div class="links">
+
+            <div class="link">
+                <h3>Redes</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloribus quos ratione delectus at voluptas, rem unde dolorum, dicta maiores
+                </p>
+                <div class="socials-2">
+                    <img src="img/face1.png" alt="">
+                    <img src="img/instagram.png" alt="">
+                    <img src="img/twitter.png" alt="">
+                </div>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <form>
+                    <input type="text" placeholder="Nombre" class="inp">
+                    <input type="email" placeholder="Email" class="inp"> <br>
+                    <textarea class="inp"></textarea> 
+                    <input class="btn-4" type="submit" value="Enviar">
+                    
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
