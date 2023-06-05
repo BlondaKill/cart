@@ -2,7 +2,7 @@
 
 let swiper = new Swiper(".mySwiper", {
     slidePerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 40,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination : {
